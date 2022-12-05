@@ -46,14 +46,22 @@ Find the Elf carrying the most Calories. How many total Calories is that Elf car
  */
 $input = file_get_contents("data/day1");
 
+// split string into array of inventories, where they are separated by a blank line (2 repeating new line characters)
 $inventories = collect(explode("\n\n", $input));
-$highestValue  = $inventories->map(function($inventory) {
-    return collect(explode("\n", $inventory))->map(function($line) {
-        return intval($line);
-    })->sum();
-})->sort()->reverse()->first();
 
-echo $highestValue;
+// map over each inventory
+$sortedInventoryTotals = $inventories->map(function($inventory) {
+        // for each inventory, split each item to its own line
+        return collect(explode("\n", $inventory))->map(function($line) {
+                // parse that line as an int
+                return intval($line);
+            })
+            ->sum(); //sum the values in the inventory
+    })
+    ->sort() // sort the inventories by total value (lowest - highest)
+    ->reverse(); // reverse the list
+
+echo $sortedInventoryTotals->first();
 
 
 /*
@@ -69,11 +77,10 @@ Find the top three Elves carrying the most Calories. How many Calories are those
 
 echo "\n";
 
-$firstThree  = $inventories->map(function($inventory) {
-    return collect(explode("\n", $inventory))->map(function($line) {
-        return intval($line);
-    })->sum();
-})->sort()->reverse()->slice(0, 3)->sum();
-echo $firstThree;
+$topThreeSum = $sortedInventoryTotals
+    ->slice(0, 3) // get the top 3 values
+    ->sum(); // sum them
+
+echo $topThreeSum;
 
 echo "\n";
