@@ -1,0 +1,12 @@
+{
+    "name": "ddl2829/advent-of-code2022",
+    "authors": [
+        {
+            "name": "Dale Smith",
+            "email": "dale@dalesmithwebdev.com"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^9.42"
+    }
+}
