@@ -128,9 +128,12 @@ $bestScore = 0;
 for($row = 0; $row < count($trees); $row++) {
     for($column = 0; $column < count($trees[$row]); $column++) {
         $score = calculateScenicScore($trees, $row, $column);
-        echo $score . "\t";
+
         if($score > $bestScore) {
             $bestScore = $score;
+            echo $score . "\t";
+        } else {
+            echo "-\t";
         }
     }
     echo "\n";
