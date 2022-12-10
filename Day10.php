@@ -44,6 +44,6 @@ foreach(run_commands($input) as $yielded) {
     }
 }
 
-echo array_sum($xOut);
+echo array_sum($xOut); // part 1 answer
 echo "\n";
-print_r($xOut); // part 1 answer
+print_r($xOut);
