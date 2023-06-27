@@ -1,4 +1,4 @@
-Advent of Code 2022
+PHP Solutions for Various Coding Challenges
 ===
 
 PHP Solutions by Dale Smith (ddl2829) (Praecep)

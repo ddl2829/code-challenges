@@ -1,6 +1,6 @@
 <?php
 
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 
 /*
 For example, suppose you were given the following strategy guide:

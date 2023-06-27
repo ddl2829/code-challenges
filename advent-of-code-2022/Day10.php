@@ -1,6 +1,6 @@
 <?php
 
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 
 $input = explode("\n", file_get_contents("data/day10"));
 
