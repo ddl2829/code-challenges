@@ -1,5 +1,7 @@
 <?php
 
+namespace AdventOfCode2023;
+
 class Day1 extends \PHPUnit\Framework\TestCase {
 
     public $mappings = [
