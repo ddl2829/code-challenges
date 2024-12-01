@@ -82,7 +82,7 @@ class Day3 extends TestCase
     }
 
     public function test_first_part() {
-        $input = file_get_contents('data/day3');
+        $input = file_get_contents(__DIR__ . '/data/day3');
         $this->assertEquals(2081, $this->solve($input, true));
     }
 
@@ -92,7 +92,7 @@ class Day3 extends TestCase
     }
 
     public function test_second_part() {
-        $input = file_get_contents('data/day3');
+        $input = file_get_contents(__DIR__ . '/data/day3');
         $this->assertEquals(2341, $this->solve($input, true));
     }
 }

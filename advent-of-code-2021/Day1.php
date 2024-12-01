@@ -57,7 +57,7 @@ HERE;
     }
 
     public function test_first_part() {
-        $input = file_get_contents('data/day1');
+        $input = file_get_contents(__DIR__ . '/data/day1');
         $this->assertEquals(1692, $this->solve($input, true));
     }
 
@@ -78,7 +78,7 @@ HERE;
     }
 
     public function test_second_part() {
-        $input = file_get_contents('data/day1');
+        $input = file_get_contents(__DIR__ . '/data/day1');
         $this->assertEquals(1724, $this->solve($input, true));
     }
 }

@@ -93,12 +93,12 @@ class Day6 extends TestCase
     }
 
     public function test_first_part() {
-        $input = file_get_contents('data/day6');
+        $input = file_get_contents(__DIR__ . '/data/day6');
         $this->assertEquals(569999, $this->solve($input));
     }
 
     public function test_second_part() {
-        $input = file_get_contents('data/day6');
+        $input = file_get_contents(__DIR__ . '/data/day6');
         $this->assertEquals(17836115, $this->solve2($input));
     }
 }

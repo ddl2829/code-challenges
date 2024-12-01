@@ -152,7 +152,7 @@ HERE;
     }
 
     public function test_first_part() {
-        $input = file_get_contents('data/day3');
+        $input = file_get_contents(__DIR__ . '/data/day3');
         $this->assertEquals(539433, $this->solve($input));
     }
 
@@ -173,7 +173,7 @@ HERE;
     }
 
     public function test_second_part() {
-        $input = file_get_contents('data/day3');
+        $input = file_get_contents(__DIR__ . '/data/day3');
         $this->assertEquals(75847567, $this->solve2($input));
     }
 }

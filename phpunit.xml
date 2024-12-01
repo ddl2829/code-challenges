@@ -1,0 +1,17 @@
+<testsuites>
+    <testsuite name="aoc-2015">
+        <directory suffix=".php">advent-of-code-2015</directory>
+    </testsuite>
+    <testsuite name="aoc-2021">
+        <directory suffix=".php">advent-of-code-2021</directory>
+    </testsuite>
+    <testsuite name="aoc-2022">
+        <directory suffix=".php">advent-of-code-2022</directory>
+    </testsuite>
+    <testsuite name="aoc-2023">
+        <directory suffix=".php">advent-of-code-2023</directory>
+    </testsuite>
+    <testsuite name="aoc-2024">
+        <directory suffix=".php">advent-of-code-2024</directory>
+    </testsuite>
+</testsuites>

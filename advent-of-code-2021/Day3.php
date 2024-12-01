@@ -111,7 +111,7 @@ HERE;
     }
 
     public function test_first_part() {
-        $input = file_get_contents('data/day3');
+        $input = file_get_contents(__DIR__ . '/data/day3');
         $this->assertEquals(1458194, $this->solve($input, true));
     }
 
@@ -134,7 +134,7 @@ HERE;
     }
 
     public function test_second_part() {
-        $input = file_get_contents('data/day3');
+        $input = file_get_contents(__DIR__ . '/data/day3');
         $this->assertEquals(2829354, $this->solve($input, true));
     }
 }

@@ -51,7 +51,7 @@ HERE;
     }
 
     public function test_first_part() {
-        $input = file_get_contents('data/day5');
+        $input = file_get_contents(__DIR__ . '/data/day5');
         $this->assertEquals("", $this->solve($input));
     }
 
@@ -63,7 +63,7 @@ HERE;
     }
 
     public function test_second_part() {
-        $input = file_get_contents('data/day5');
+        $input = file_get_contents(__DIR__ . '/data/day5');
         $this->assertEquals("", $this->solve($input, true));
     }
 }

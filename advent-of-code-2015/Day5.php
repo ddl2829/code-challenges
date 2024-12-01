@@ -78,7 +78,7 @@ class Day5 extends TestCase
     }
 
     public function test_first_part() {
-        $input = file_get_contents('data/day5');
+        $input = file_get_contents(__DIR__ . '/data/day5');
         $this->assertEquals(255, $this->solve($input));
     }
 
@@ -90,7 +90,7 @@ class Day5 extends TestCase
     }
 
     public function test_second_part() {
-        $input = file_get_contents('data/day5');
+        $input = file_get_contents(__DIR__ . '/data/day5');
         $this->assertEquals(55, $this->solve($input, true));
     }
 }
